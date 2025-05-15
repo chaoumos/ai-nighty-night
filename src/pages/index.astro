@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const siteTitle = "AI Nighty Night: Personalized Bedtime Stories";
+const siteDescription = "A curated collection of AI-generated bedtime stories tailored to your child's imagination. Sweet dreams powered by technology!";
+---
+
+<Layout title={siteTitle} description={siteDescription}>
+	<section class="hero bg-accent py-20 rounded-lg shadow-md">
+		<div class="container mx-auto text-center">
+			<h1 class="text-5xl font-bold mb-4 text-primary">Welcome to AI Nighty Night</h1>
+			<p class="text-xl text-gray-700">Personalized bedtime stories crafted with AI magic.</p>
+			<img src="https://placehold.co/800x400.png" alt="Cartoon illustration of children sleeping soundly" data-ai-hint="cartoon children sleeping soundly" class="mt-8 rounded-lg shadow-lg mx-auto" />
+		</div>
+	</section>
+
+	<section class="story-generator py-12">
+		<div class="container mx-auto">
+			<h2 class="text-3xl font-semibold mb-6 text-secondary">Create Your Story</h2>
+			<p class="mb-4">Enter keywords related to your child's interests, and our AI will generate a unique bedtime story!</p>
+			<form class="flex flex-col space-y-4">
+				<input type="text" placeholder="e.g., dragons, space, ballet" class="border p-3 rounded-md focus:ring focus:border-primary" />
+				<button class="bg-primary text-white py-3 rounded-md hover:bg-accent focus:outline-none focus:ring focus:ring-primary">Generate Story</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="sample-stories py-12">
+		<div class="container mx-auto">
+			<h2 class="text-3xl font-semibold mb-6 text-secondary">Sample Stories</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="story-card bg-white rounded-lg shadow-md p-4">
+					<img src="https://placehold.co/400x300.png" alt="Illustration of a dragon" data-ai-hint="Illustration of a dragon" class="rounded-md mb-2" />
+					<h3 class="text-xl font-semibold text-primary">The Dragon's Ballet</h3>
+					<p class="text-gray-700">A little dragon discovers a love for ballet and learns to dance among the stars.</p>
+				</div>
+				<div class="story-card bg-white rounded-lg shadow-md p-4">
+					<img src="https://placehold.co/400x300.png" alt="Illustration of a space adventure" data-ai-hint="Illustration of a space adventure" class="rounded-md mb-2" />
+					<h3 class="text-xl font-semibold text-primary">Space Explorers</h3>
+					<p class="text-gray-700">Join Maya and Leo as they explore distant planets and befriend friendly aliens.</p>
+				</div>
+				<div class="story-card bg-white rounded-lg shadow-md p-4">
+					<img src="https://placehold.co/400x300.png" alt="Illustration of a princess" data-ai-hint="Illustration of a princess" class="rounded-md mb-2" />
+					<h3 class="text-xl font-semibold text-primary">The Princess and the Unicorn</h3>
+					<p class="text-gray-700">A brave princess embarks on a magical journey with her unicorn companion.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="how-it-works py-12 bg-primary rounded-lg shadow-md">
+		<div class="container mx-auto text-center">
+			<h2 class="text-3xl font-semibold mb-6 text-white">How It Works</h2>
+			<p class="text-lg text-white mb-4">Our AI uses your keywords to create a unique and imaginative bedtime story just for your child!</p>
+			<ol class="list-decimal list-inside text-left mx-auto max-w-md">
+				<li class="text-white mb-2">Enter a few keywords that your child loves.</li>
+				<li class="text-white mb-2">Our magical AI crafts a brand-new story.</li>
+				<li class="text-white">Enjoy the personalized bedtime adventure!</li>
+			</ol>
+		</div>
+	</section>
+</Layout>
